@@ -1,0 +1,38 @@
+from ast import If
+import datetime
+import glob
+import os
+import shutil
+from tkinter import HIDDEN
+import uuid
+from doctest import DocFileTest
+from email.utils import format_datetime
+from math import fabs
+from operator import index
+from pickle import NONE
+import pandas as pd
+import pyodbc
+import xlsxwriter
+from matplotlib.pyplot import axis
+import jinja2
+
+
+
+df = pd.read_excel('ECA payment 1-23.xlsx')
+
+for p in df['Master file'].unique():
+    df['Effective Transaction Date'] = pd.to_datetime(df['Effective Transaction Date']).dt.date
+    df['Transaction Date Posting '] = pd.to_datetime(df['Transaction Date Posting ']).dt.date
+    
+    df.loc[df['Master file'] == p].to_excel(f'ECA payment {p} 1-23.xlsx',index=False)
+
+#################################################################p'kanom
+
+df = pd.read_excel('ECA payment 1-24.xlsx',sheet_name='Sheet1',header=0,converters={'Ref1 (เลขบัตรประชาชน)':str})
+
+for p in df['Master file'].unique():
+    df['วันที่ชำระ'] = pd.to_datetime(df['วันที่ชำระ']).dt.date
+    #df['Ref1 (เลขบัตรประชาชน)'].astype(str)
+  
+    
+    df.loc[df['Master file'] == p].to_excel(f'ECA payment {p} 1-24.xlsx',index=False)
