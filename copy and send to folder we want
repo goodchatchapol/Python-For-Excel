@@ -16,175 +16,154 @@ import xlsxwriter
 from matplotlib.pyplot import axis
 
 
+src_folder = "C:\\Users\\chatchapol.p\\Desktop\\New folder"
+
+
 #1
-src_folder = "C:\\Users\\chatchapol.p\\Desktop\\ECA payment 31"
-dst_folder = "Z:\\FTPS\\ABIZ\\ECA Payment"
-pattern = src_folder + "\ECA payment ABIZ 1-31.xlsx*"
+dst_folder = "Z:\\FTPS\\ABIZ\\ECA Payment\\Nov 22"
+pattern = src_folder + "\*ABIZ*"
 for files in glob.iglob(pattern, recursive=True):
     file_name = os.path.basename(files)
     shutil.copy(files, dst_folder)
 
 #2
-src_folder = "C:\\Users\\chatchapol.p\\Desktop\\ECA payment 31"
-dst_folder = "Z:\\FTPS\\ACT\\ECA Payment"
-pattern = src_folder + "\ECA payment ACT 1-31.xlsx*"
+dst_folder = "Z:\\FTPS\\ACT\\ECA Payment\\Nov 22"
+pattern = src_folder + "\*ACT*"
 for files in glob.iglob(pattern, recursive=True):
     file_name = os.path.basename(files)
     shutil.copy(files, dst_folder)
   
 #3    
-src_folder = "C:\\Users\\chatchapol.p\\Desktop\\ECA payment 31"
-dst_folder = "Z:\\FTPS\\APS\\ECA Payment"
-pattern = src_folder + "\ECA payment APS 1-31.xlsx*"
+dst_folder = "Z:\\FTPS\\APS\\ECA Payment\\Nov 22"
+pattern = src_folder + "\*APS*"
 for files in glob.iglob(pattern, recursive=True):
     file_name = os.path.basename(files)
     shutil.copy(files, dst_folder)    
 #4
-src_folder = "C:\\Users\\chatchapol.p\\Desktop\\ECA payment 31"
-dst_folder = "Z:\\FTPS\\ART\\ECA Payment"
-pattern = src_folder + "\ECA payment ART 1-31.xlsx*"
+dst_folder = "Z:\\FTPS\\ART\\ECA Payment\\Nov 22"
+pattern = src_folder + "\*ART*"
 for files in glob.iglob(pattern, recursive=True):
     file_name = os.path.basename(files)
     shutil.copy(files, dst_folder)
 
 #5
-src_folder = "C:\\Users\\chatchapol.p\\Desktop\\ECA payment 31"
-dst_folder = "Z:\\FTPS\\CHOT\\ECA Payment"
-pattern = src_folder + "\ECA payment CHOT 1-31.xlsx*"
+dst_folder = "Z:\\FTPS\\CHOT\\ECA Payment\\Nov 22"
+pattern = src_folder + "\*CHOT*"
 for files in glob.iglob(pattern, recursive=True):
     file_name = os.path.basename(files)
     shutil.copy(files, dst_folder)
   
 #6    
-src_folder = "C:\\Users\\chatchapol.p\\Desktop\\ECA payment 31"
-dst_folder = "Z:\\FTPS\\EKN\\ECA Payment"
-pattern = src_folder + "\ECA payment EKN 1-31.xlsx*"
+dst_folder = "Z:\\FTPS\\EKN\\ECA Payment\\Nov 22"
+pattern = src_folder + "\*EKN*"
 for files in glob.iglob(pattern, recursive=True):
     file_name = os.path.basename(files)
     shutil.copy(files, dst_folder)    
 #7    
-src_folder = "C:\\Users\\chatchapol.p\\Desktop\\ECA payment 31"
-dst_folder = "Z:\\FTPS\\LAW\\ECA Payment"
-pattern = src_folder + "\ECA payment LAW 1-31.xlsx*"
+dst_folder = "Z:\\FTPS\\LAW\\ECA Payment\\Nov 22"
+pattern = src_folder + "\*LAW*"
 for files in glob.iglob(pattern, recursive=True):
     file_name = os.path.basename(files)
     shutil.copy(files, dst_folder)    
   #8  
-src_folder = "C:\\Users\\chatchapol.p\\Desktop\\ECA payment 31"
-dst_folder = "Z:\\FTPS\\MIT\\ECA Payment"
-pattern = src_folder + "\ECA payment MIT 1-31.xlsx*"
+dst_folder = "Z:\\FTPS\\MIT\\ECA Payment\\Nov 22"
+pattern = src_folder + "\*MIT*"
 for files in glob.iglob(pattern, recursive=True):
     file_name = os.path.basename(files)
     shutil.copy(files, dst_folder)    
   #9  
-src_folder = "C:\\Users\\chatchapol.p\\Desktop\\ECA payment 31"
-dst_folder = "Z:\\FTPS\\MMN\\ECA Payment"
-pattern = src_folder + "\ECA payment MMN 1-31.xlsx*"
+dst_folder = "Z:\\FTPS\\MMN\\ECA Payment\\Nov 22"
+pattern = src_folder + "\*MMN*"
 for files in glob.iglob(pattern, recursive=True):
     file_name = os.path.basename(files)
     shutil.copy(files, dst_folder)    
     #10
-src_folder = "C:\\Users\\chatchapol.p\\Desktop\\ECA payment 31"
-dst_folder = "Z:\\FTPS\\NSR\\ECA Payment"
-pattern = src_folder + "\ECA payment NSR 1-31.xlsx*"
+dst_folder = "Z:\\FTPS\\NSR\\ECA Payment\\Nov 22"
+pattern = src_folder + "\*NSR*"
 for files in glob.iglob(pattern, recursive=True):
     file_name = os.path.basename(files)
     shutil.copy(files, dst_folder)    
     #11
-src_folder = "C:\\Users\\chatchapol.p\\Desktop\\ECA payment 31"
-dst_folder = "Z:\\FTPS\\PAT\\ECA Payment"
-pattern = src_folder + "\ECA payment PAT 1-31.xlsx*"
+dst_folder = "Z:\\FTPS\\PAT\\ECA Payment\\Nov 22"
+pattern = src_folder + "\*PAT*"
 for files in glob.iglob(pattern, recursive=True):
     file_name = os.path.basename(files)
     shutil.copy(files, dst_folder)    
     #12
-src_folder = "C:\\Users\\chatchapol.p\\Desktop\\ECA payment 31"
-dst_folder = "Z:\\FTPS\\PNR\\ECA Payment"
-pattern = src_folder + "\ECA payment PNR 1-31.xlsx*"
+dst_folder = "Z:\\FTPS\\PNR\\ECA Payment\\Nov 22"
+pattern = src_folder + "\*PNR*"
 for files in glob.iglob(pattern, recursive=True):
     file_name = os.path.basename(files)
     shutil.copy(files, dst_folder)    
  #13   
-src_folder = "C:\\Users\\chatchapol.p\\Desktop\\ECA payment 31"
-dst_folder = "Z:\\FTPS\\PRE\\ECA Payment"
-pattern = src_folder + "\ECA payment PRE 1-31.xlsx*"
+dst_folder = "Z:\\FTPS\\PRE\\ECA Payment\\Nov 22"
+pattern = src_folder + "\*PRE*"
 for files in glob.iglob(pattern, recursive=True):
     file_name = os.path.basename(files)
     shutil.copy(files, dst_folder)    
     #14
-src_folder = "C:\\Users\\chatchapol.p\\Desktop\\ECA payment 31"
-dst_folder = "Z:\\FTPS\\PSC\\ECA Payment"
-pattern = src_folder + "\ECA payment PSC 1-31.xlsx*"
+dst_folder = "Z:\\FTPS\\PSC\\ECA Payment\\Nov 22"
+pattern = src_folder + "\*PSC*"
 for files in glob.iglob(pattern, recursive=True):
     file_name = os.path.basename(files)
     shutil.copy(files, dst_folder)    
     #15
-src_folder = "C:\\Users\\chatchapol.p\\Desktop\\ECA payment 31"
-dst_folder = "Z:\\FTPS\\PWM\\ECA Payment"
-pattern = src_folder + "\ECA payment PWM 1-31.xlsx*"
+dst_folder = "Z:\\FTPS\\PWM\\ECA Payment\\Nov 22"
+pattern = src_folder + "\*PWM*"
 for files in glob.iglob(pattern, recursive=True):
     file_name = os.path.basename(files)
     shutil.copy(files, dst_folder)    
   #16  
-src_folder = "C:\\Users\\chatchapol.p\\Desktop\\ECA payment 31"
-dst_folder = "Z:\\FTPS\\PWS\\ECA Payment"
-pattern = src_folder + "\ECA payment PWS 1-31.xlsx*"
+dst_folder = "Z:\\FTPS\\PWS\\ECA Payment\\Nov 22"
+pattern = src_folder + "\*PWS*"
 for files in glob.iglob(pattern, recursive=True):
     file_name = os.path.basename(files)
     shutil.copy(files, dst_folder)    
     #17
-src_folder = "C:\\Users\\chatchapol.p\\Desktop\\ECA payment 31"
-dst_folder = "Z:\\FTPS\\SPB\\ECA Payment"
-pattern = src_folder + "\ECA payment PSB 1-31.xlsx*"
-for files in glob.iglob(pattern, recursive=True):
-    file_name = os.path.basename(files)
-    shutil.copy(files, dst_folder)    
+#dst_folder = "Z:\\FTPS\\SPB\\ECA Payment\\Nov 22"
+#pattern = src_folder + "\*SRM*"
+#for files in glob.iglob(pattern, recursive=True):
+ #   file_name = os.path.basename(files)
+  #  shutil.copy(files, dst_folder)    
     #18
-src_folder = "C:\\Users\\chatchapol.p\\Desktop\\ECA payment 31"
-dst_folder = "Z:\\FTPS\\STW\\ECA Payment"
-pattern = src_folder + "\ECA payment STW 1-31.xlsx*"
+dst_folder = "Z:\\FTPS\\STW\\ECA Payment\\Nov 22"
+pattern = src_folder + "\*STW*"
 for files in glob.iglob(pattern, recursive=True):
     file_name = os.path.basename(files)
     shutil.copy(files, dst_folder)    
     #19
-src_folder = "C:\\Users\\chatchapol.p\\Desktop\\ECA payment 31"
-dst_folder = "Z:\\FTPS\\TBS\\ECA Payment"
-pattern = src_folder + "\ECA payment TBS 1-31.xlsx*"
+dst_folder = "Z:\\FTPS\\TBS\\ECA Payment\\Nov 22"
+pattern = src_folder + "\*TBS*"
 for files in glob.iglob(pattern, recursive=True):
     file_name = os.path.basename(files)
     shutil.copy(files, dst_folder)    
     #20
-src_folder = "C:\\Users\\chatchapol.p\\Desktop\\ECA payment 31"
-dst_folder = "Z:\\FTPS\\TOP\\ECA Payment"
-pattern = src_folder + "\ECA payment TOP 1-31.xlsx*"
+dst_folder = "Z:\\FTPS\\TOP\\ECA Payment\\Nov 22"
+pattern = src_folder + "\*TOP*"
 for files in glob.iglob(pattern, recursive=True):
     file_name = os.path.basename(files)
     shutil.copy(files, dst_folder)    
     #21
-src_folder = "C:\\Users\\chatchapol.p\\Desktop\\ECA payment 31"
-dst_folder = "Z:\\FTPS\\TOP\\ECA Payment"
-pattern = src_folder + "\ECA payment TOP2 1-31.xlsx*"
+dst_folder = "Z:\\FTPS\\TOP\\ECA Payment\\Nov 22"
+pattern = src_folder + "\*TOP2*"
 for files in glob.iglob(pattern, recursive=True):
     file_name = os.path.basename(files)
     shutil.copy(files, dst_folder)    
     #22
-src_folder = "C:\\Users\\chatchapol.p\\Desktop\\ECA payment 31"
-dst_folder = "Z:\\FTPS\\TTK\\ECA Payment"
-pattern = src_folder + "\ECA payment TTK 1-31.xlsx*"
+dst_folder = "Z:\\FTPS\\TTK\\ECA Payment\\Nov 22"
+pattern = src_folder + "\*TTK*"
 for files in glob.iglob(pattern, recursive=True):
     file_name = os.path.basename(files)
     shutil.copy(files, dst_folder)    
     #23
-src_folder = "C:\\Users\\chatchapol.p\\Desktop\\ECA payment 31"
-dst_folder = "Z:\\FTPS\\UPP\\ECA Payment"
-pattern = src_folder + "\ECA payment UPP 1-31.xlsx*"
+dst_folder = "Z:\\FTPS\\UPP\\ECA Payment\\Nov 22"
+pattern = src_folder + "\*UPP*"
 for files in glob.iglob(pattern, recursive=True):
     file_name = os.path.basename(files)
     shutil.copy(files, dst_folder)    
     #24
-src_folder = "C:\\Users\\chatchapol.p\\Desktop\\ECA payment 31"
-dst_folder = "Z:\\FTPS\\WEL\\ECA Payment"
-pattern = src_folder + "\ECA payment WEL 1-31.xlsx*"
+dst_folder = "Z:\\FTPS\\WEL\\ECA Payment\\Nov 22"
+pattern = src_folder + "\*WEL*"
 for files in glob.iglob(pattern, recursive=True):
     file_name = os.path.basename(files)
     shutil.copy(files, dst_folder)    
